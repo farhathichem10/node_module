@@ -1,0 +1,85 @@
+{
+  "name": "@progress/kendo-angular-treeview",
+  "version": "7.1.5",
+  "description": "Kendo UI TreeView for Angular",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "Progress",
+  "homepage": "https://www.telerik.com/kendo-angular-ui/components/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-angular-treeview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-angular"
+  },
+  "keywords": [
+    "Angular",
+    "Kendo UI",
+    "Progress",
+    "TreeView"
+  ],
+  "@progress": {
+    "friendlyName": "TreeView"
+  },
+  "dependencies": {
+    "@progress/kendo-common": "^0.2.0",
+    "@progress/kendo-schematics": "^3.0.0",
+    "@progress/kendo-draggable": "^3.0.2",
+    "tslib": "^2.3.1"
+  },
+  "peerDependencies": {
+    "@angular/animations": "12 - 15",
+    "@angular/common": "12 - 15",
+    "@angular/core": "12 - 15",
+    "@progress/kendo-angular-common": "^3.0.0",
+    "@progress/kendo-angular-inputs": "9 - 10",
+    "@progress/kendo-angular-l10n": "^4.0.0",
+    "@progress/kendo-licensing": "^1.1.1",
+    "rxjs": "^6.5.3 || ^7.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100
+    }
+  },
+  "schematics": "./schematics/collection.json",
+  "release": {
+    "debug": false,
+    "branchTags": {
+      "develop": "dev"
+    },
+    "fallbackTags": {
+      "dev": "latest"
+    },
+    "analyzeCommits": "@progress/semantic-prerelease/analyzeCommits",
+    "generateNotes": "@progress/kendo-angular-tasks/lib/generateNotes",
+    "getLastRelease": "@progress/semantic-prerelease/getLastRelease",
+    "verifyConditions": "@progress/semantic-prerelease/verifyConditions",
+    "verifyRelease": "@progress/semantic-prerelease/verifyRelease"
+  },
+  "main": "bundles/kendo-angular-treeview.umd.js",
+  "module": "fesm2015/kendo-angular-treeview.js",
+  "es2015": "fesm2015/kendo-angular-treeview.js",
+  "esm2015": "esm2015/kendo-angular-treeview.js",
+  "fesm2015": "fesm2015/kendo-angular-treeview.js",
+  "typings": "kendo-angular-treeview.d.ts",
+  "sideEffects": false
+}

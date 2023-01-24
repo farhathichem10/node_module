@@ -1,0 +1,96 @@
+{
+  "name": "@progress/kendo-angular-dateinputs",
+  "version": "7.1.6",
+  "description": "Kendo UI for Angular Date Inputs Package - Everything you need to add date selection functionality to apps (DatePicker, TimePicker, DateInput, DateRangePicker, DateTimePicker, Calendar, and MultiViewCalendar).",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "Progress",
+  "homepage": "https://www.telerik.com/kendo-angular-ui/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-angular-dateinputs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-angular"
+  },
+  "keywords": [
+    "Angular",
+    "Kendo UI",
+    "angular dateinput",
+    "angularjs",
+    "calendar",
+    "date-input",
+    "date-picker",
+    "date-time",
+    "dateinput",
+    "dateinput for angular",
+    "daterange",
+    "datetimepicker",
+    "multiviewcalendar",
+    "timepicker"
+  ],
+  "@progress": {
+    "friendlyName": "DateInputs"
+  },
+  "dependencies": {
+    "@progress/kendo-common": "^0.2.0",
+    "@progress/kendo-date-math": "^1.1.0",
+    "@progress/kendo-schematics": "^3.0.0",
+    "tslib": "^2.3.1"
+  },
+  "peerDependencies": {
+    "@angular/common": "12 - 15",
+    "@angular/core": "12 - 15",
+    "@angular/forms": "12 - 15",
+    "@progress/kendo-angular-common": "^3.0.0",
+    "@progress/kendo-angular-intl": "^4.0.0",
+    "@progress/kendo-angular-l10n": "^4.0.0",
+    "@progress/kendo-angular-popup": "^5.0.0",
+    "@progress/kendo-licensing": "^1.1.1",
+    "rxjs": "^6.5.3 || ^7.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100
+    }
+  },
+  "schematics": "./schematics/collection.json",
+  "release": {
+    "debug": false,
+    "branchTags": {
+      "develop": "dev"
+    },
+    "fallbackTags": {
+      "dev": "latest"
+    },
+    "analyzeCommits": "@progress/semantic-prerelease/analyzeCommits",
+    "generateNotes": "@progress/kendo-angular-tasks/lib/generateNotes",
+    "getLastRelease": "@progress/semantic-prerelease/getLastRelease",
+    "verifyConditions": "@progress/semantic-prerelease/verifyConditions",
+    "verifyRelease": "@progress/semantic-prerelease/verifyRelease"
+  },
+  "main": "bundles/kendo-angular-dateinputs.umd.js",
+  "module": "fesm2015/kendo-angular-dateinputs.js",
+  "es2015": "fesm2015/kendo-angular-dateinputs.js",
+  "esm2015": "esm2015/kendo-angular-dateinputs.js",
+  "fesm2015": "fesm2015/kendo-angular-dateinputs.js",
+  "typings": "kendo-angular-dateinputs.d.ts",
+  "sideEffects": false
+}

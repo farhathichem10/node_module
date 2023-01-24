@@ -1,0 +1,1 @@
+{"version":3,"file":"index.d.ts","sources":["index.d.ts"],"names":[],"mappings":";AAAA;AACA;AACA;;;;AACA","sourcesContent":["export * from './services/push-notifications.service';\nexport * from './interfaces/push-notification.type';\nexport declare class PushNotificationsModule {\n}\n"]}

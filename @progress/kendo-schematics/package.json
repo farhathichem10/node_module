@@ -1,0 +1,93 @@
+{
+  "name": "@progress/kendo-schematics",
+  "description": "Kendo UI Schematics for Angular",
+  "author": "Progress",
+  "license": "SEE LICENSE in LICENSE.md",
+  "version": "3.2.0",
+  "scripts": {
+    "build-package": "npm run build",
+    "lint": "exit 0",
+    "api-check": "exit 0",
+    "build": "tsc -p tsconfig.json",
+    "test": "npx jest",
+    "test:ci": "npm run test",
+    "semantic-release": "semantic-release pre && semantic-prerelease publish && semantic-release post"
+  },
+  "keywords": [
+    "blueprints",
+    "code generation",
+    "schematics",
+    "Kendo UI",
+    "Progress",
+    "Angular",
+    "DevKit",
+    "Angular DevKit",
+    "Angular CLI",
+    "angularjs",
+    "angular-schematics"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-schematics.git"
+  },
+  "schematics": "./src/collection.json",
+  "devDependencies": {
+    "@angular-devkit/core": "^12.2.10",
+    "@angular-devkit/schematics": "^12.2.10",
+    "@progress/kendo-common-tasks": "^7.9.4",
+    "@telerik/semantic-prerelease": "^2.0.0",
+    "@types/jest": "^27.4.1",
+    "@types/node": "ts4.3",
+    "cz-conventional-changelog": "^1.1.5",
+    "ghooks": "^1.0.3",
+    "jest": "^27.5.1",
+    "rxjs": "^6.0.0",
+    "ts-jest": "^27.1.4",
+    "typescript": "~4.3.4",
+    "validate-commit-msg": "^1.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-angular"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100
+    }
+  },
+  "homepage": "https://www.telerik.com/kendo-angular-ui/",
+  "release": {
+    "debug": false,
+    "branchTags": {
+      "develop": "dev"
+    },
+    "fallbackTags": {
+      "dev": "latest"
+    },
+    "analyzeCommits": "@telerik/semantic-prerelease/analyzeCommits",
+    "generateNotes": "@telerik/semantic-prerelease/generateNotes",
+    "getLastRelease": "@telerik/semantic-prerelease/getLastRelease",
+    "verifyConditions": "@telerik/semantic-prerelease/verifyConditions",
+    "verifyRelease": "@telerik/semantic-prerelease/verifyRelease"
+  },
+  "files": [
+    "src"
+  ]
+}

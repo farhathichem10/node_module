@@ -1,0 +1,12 @@
+import { NgModule } from '@angular/core';
+import { PushNotificationsService } from './services/push-notifications.service';
+export * from './services/push-notifications.service';
+export * from './interfaces/push-notification.type';
+export class PushNotificationsModule {
+}
+PushNotificationsModule.decorators = [
+    { type: NgModule, args: [{
+                providers: [PushNotificationsService],
+            },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi4vLi4vLi4vcHJvamVjdHMvY2Z3L3NyYy8iLCJzb3VyY2VzIjpbImluZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBQyxRQUFRLEVBQUMsTUFBTSxlQUFlLENBQUM7QUFDdkMsT0FBTyxFQUFDLHdCQUF3QixFQUFDLE1BQU0sdUNBQXVDLENBQUM7QUFFL0UsY0FBYyx1Q0FBdUMsQ0FBQztBQUN0RCxjQUFjLHFDQUFxQyxDQUFDO0FBS3BELE1BQU0sT0FBTyx1QkFBdUI7OztZQUhuQyxRQUFRLFNBQUM7Z0JBQ1IsU0FBUyxFQUFFLENBQUMsd0JBQXdCLENBQUM7YUFDdEMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge05nTW9kdWxlfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7UHVzaE5vdGlmaWNhdGlvbnNTZXJ2aWNlfSBmcm9tICcuL3NlcnZpY2VzL3B1c2gtbm90aWZpY2F0aW9ucy5zZXJ2aWNlJztcblxuZXhwb3J0ICogZnJvbSAnLi9zZXJ2aWNlcy9wdXNoLW5vdGlmaWNhdGlvbnMuc2VydmljZSc7XG5leHBvcnQgKiBmcm9tICcuL2ludGVyZmFjZXMvcHVzaC1ub3RpZmljYXRpb24udHlwZSc7XG5cbkBOZ01vZHVsZSh7XG4gIHByb3ZpZGVyczogW1B1c2hOb3RpZmljYXRpb25zU2VydmljZV0sXG59KVxuZXhwb3J0IGNsYXNzIFB1c2hOb3RpZmljYXRpb25zTW9kdWxlIHt9XG4iXX0=

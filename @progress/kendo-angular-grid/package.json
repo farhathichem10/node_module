@@ -1,0 +1,104 @@
+{
+  "name": "@progress/kendo-angular-grid",
+  "version": "7.4.2",
+  "description": "Kendo UI Grid for Angular - high performance data grid with paging, filtering, virtualization, CRUD, and more.",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "author": "Progress",
+  "homepage": "https://www.telerik.com/kendo-angular-ui/grid?utm_medium=referral&utm_source=npm&utm_campaign=kendo-ui-angular-trial-npm-grid",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/telerik/kendo-angular-grid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/telerik/kendo-angular?utm_medium=referral&utm_source=npm&utm_campaign=kendo-ui-angular-trial-npm-grid"
+  },
+  "keywords": [
+    "Angular",
+    "Grid",
+    "Kendo UI",
+    "Progress",
+    "angular-component",
+    "angularjs",
+    "data-grid",
+    "data-table",
+    "datagrid",
+    "datatable",
+    "table"
+  ],
+  "@progress": {
+    "friendlyName": "Grid"
+  },
+  "dependencies": {
+    "@progress/kendo-common": "^0.2.0",
+    "@progress/kendo-file-saver": "^1.0.0",
+    "@progress/kendo-schematics": "^3.0.0",
+    "tslib": "^2.3.1"
+  },
+  "peerDependencies": {
+    "@angular/animations": "12 - 15",
+    "@angular/common": "12 - 15",
+    "@angular/core": "12 - 15",
+    "@angular/forms": "12 - 15",
+    "@angular/platform-browser": "12 - 15",
+    "@progress/kendo-angular-buttons": "^8.0.0",
+    "@progress/kendo-angular-common": "^3.0.0",
+    "@progress/kendo-angular-dateinputs": "^7.0.0",
+    "@progress/kendo-angular-dropdowns": "^7.0.0",
+    "@progress/kendo-angular-excel-export": "^5.0.0",
+    "@progress/kendo-angular-inputs": "9 - 10",
+    "@progress/kendo-angular-intl": "^4.0.0",
+    "@progress/kendo-angular-l10n": "^4.0.0",
+    "@progress/kendo-angular-label": "^4.0.0",
+    "@progress/kendo-angular-pdf-export": "^4.0.0",
+    "@progress/kendo-angular-popup": "^5.0.0",
+    "@progress/kendo-data-query": "^1.0.0",
+    "@progress/kendo-drawing": "^1.0.0",
+    "@progress/kendo-licensing": "^1.0.2",
+    "rxjs": "^6.5.3 || ^7.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    },
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100
+    }
+  },
+  "schematics": "./schematics/collection.json",
+  "release": {
+    "debug": false,
+    "branchTags": {
+      "develop": "dev"
+    },
+    "fallbackTags": {
+      "dev": "latest"
+    },
+    "analyzeCommits": "@progress/semantic-prerelease/analyzeCommits",
+    "generateNotes": "@progress/kendo-angular-tasks/lib/generateNotes",
+    "getLastRelease": "@progress/semantic-prerelease/getLastRelease",
+    "verifyConditions": "@progress/semantic-prerelease/verifyConditions",
+    "verifyRelease": "@progress/semantic-prerelease/verifyRelease"
+  },
+  "main": "bundles/kendo-angular-grid.umd.js",
+  "module": "fesm2015/kendo-angular-grid.js",
+  "es2015": "fesm2015/kendo-angular-grid.js",
+  "esm2015": "esm2015/kendo-angular-grid.js",
+  "fesm2015": "fesm2015/kendo-angular-grid.js",
+  "typings": "kendo-angular-grid.d.ts",
+  "sideEffects": false
+}
